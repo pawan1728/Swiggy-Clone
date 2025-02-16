@@ -9,7 +9,7 @@ const ResHeader = () => {
   return (
     <div className=''>
       <div className=' w-full flex flex-wrap border-b my-4 items-center justify-between'>
-        <div className=' w-2/12 h-2/6 z-50 '>
+        <div className=' w-1/12 h-1/6 z-50 '>
           <img src={RESLOGO} className='w-32 h-auto' alt='logo' />
         </div>
         <div className=''>

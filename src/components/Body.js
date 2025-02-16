@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react'
-// import { YOUTUBE_VIDEO_API } from '../Constant/URLs
-// import { ResList } from '../Constant/ResList'
 import ResCard from './ResCard'
 import FilterButton from './FilterButton'
 import Shimmer from './Shimmer'
@@ -18,7 +16,6 @@ const Body = () => {
     const data = await fetch(RESLISTAPIS);
     const json = await data.json();
     const finalData = json.data.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-    // console.log("finalData",finalData);
     SetListOfRestaurents(finalData);
     SetFilteredRestaurents(finalData)
   }
